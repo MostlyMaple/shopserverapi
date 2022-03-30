@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6%4ap(##%19u(rzwsrau))x7=rmv#26k#p5)sx_fi4z5-o3=0&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -87,8 +87,11 @@ DATABASES = {
     }
 }
 
+STATIC_URL = '/static/'
 
-# Password validation
+STATIC_ROOT = '/django-project/site/public/static'
+
+MEDIA_ROOT = '/django-project/site/public/media'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
